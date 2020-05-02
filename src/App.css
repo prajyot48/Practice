@@ -1,11 +1,13 @@
+/* css for overall */
+
 *, ::after, ::before {
     box-sizing: border-box;
 }
 
 /*Css for Navbar*/
 #logo{
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
@@ -27,5 +29,5 @@ color:yellow;
 }
 .Navbar{
     background: #0d2235;
-
+    border-bottom: 3px solid #ffa54b;
 }
