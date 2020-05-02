@@ -12,7 +12,11 @@
 }
 
 .nav-item{
+    text-transform: uppercase;
+    font-style: italic;
     font-size: 18px;
+    font-weight: 700;
+    font-family: Roboto,"Segoe UI","Helvetica Neue",Arial,sans-serif;
 }
 .navbar-brand,.nav-link {
 color:white;
@@ -22,5 +26,6 @@ color:white;
 color:yellow;
 }
 .Navbar{
-    background: black;
+    background: #0d2235;
+
 }
