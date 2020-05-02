@@ -13,7 +13,7 @@ import {
   DropdownItem,
   NavbarText
 } from 'reactstrap';
-
+import logo from '../assets/Smulogo.jpeg'
 const Example = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,17 +21,19 @@ const Example = (props) => {
 
   return (
     <div>
-      <Navbar color="dark" dark expand="md">
-        <NavbarBrand href="/">SMU</NavbarBrand>
+      <Navbar   expand="md" className='Navbar' >
+        <img src={logo} id='logo'/>
+        <NavbarBrand href="/">
+        </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
-            <NavItem>
-              <NavLink href="/components/">Home</NavLink>
+          <Nav className="ml-auto" navbar>
+            <NavItem className='nav-item'>
+              <NavLink href="/home/">Home</NavLink>
             </NavItem>
 
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">About</NavLink>
+              <NavLink href="/about">About</NavLink>
             </NavItem>
 
             <UncontrolledDropdown nav inNavbar>
@@ -51,10 +53,18 @@ const Example = (props) => {
               </DropdownMenu>
             </UncontrolledDropdown>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">Contact</NavLink>
+              <NavLink href="/contact">Contact</NavLink>
+            </NavItem>
+                        <NavItem>
+              <NavLink href="/blog">Blog</NavLink>
+            </NavItem>
+                        <NavItem>
+              <NavLink href="/staff">Staff</NavLink>
+            </NavItem>
+                        <NavItem>
+              <NavLink href="/achieve">Achievements</NavLink>
             </NavItem>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
         </Collapse>
       </Navbar>
     </div>

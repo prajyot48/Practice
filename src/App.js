@@ -8,9 +8,7 @@ class App extends React.Component {
             <div className="App">
               <Example />
             </div>
-
         )
-
   }
 }
 

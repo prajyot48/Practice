@@ -1,0 +1,26 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+/*Css for Navbar*/
+#logo{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.nav-item{
+    font-size: 18px;
+}
+.navbar-brand,.nav-link {
+color:white;
+}
+
+.navbar-brand,.nav-link:hover {
+color:yellow;
+}
+.Navbar{
+    background: black;
+}
