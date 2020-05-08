@@ -50,3 +50,43 @@ color:yellow;
 .dropdown-item{
     font-weight: 600 !important;
 }
+
+
+
+
+
+/*About Css Here*/
+#personal,.contact-form{
+    display: flex;
+}
+
+.contact-us,.contact-form{
+    margin-left: 120px;
+    min-width: 40%;
+    align-items: center;
+    height: 70vh;
+    padding: 20px;
+}
+.h1{
+    margin-left: 20px;
+}
+.contact-details{
+    background-color: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+    padding-top: 60px;
+    padding-bottom: 30px;
+    display: block;
+
+}
+.contact-details-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.text{
+    margin: 10px;
+}
+.type{
+    color: red;
+}

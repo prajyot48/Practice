@@ -11,9 +11,17 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  NavbarText
+
 } from 'reactstrap';
 import logo from '../assets/Smulogo.jpeg'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useParams
+} from "react-router-dom";
+
 const Example = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,10 +29,10 @@ const Example = (props) => {
 
   return (
     <div>
-      <Navbar   expand="md" className='Navbar' >
+      <Navbar expand="md" className='Navbar' >
 
         <NavbarBrand href="/">
-        <img src={logo} id='logo'/>
+          <img src={logo} id='logo' />
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
@@ -56,13 +64,13 @@ const Example = (props) => {
             <NavItem>
               <NavLink href="/contact">Contact</NavLink>
             </NavItem>
-                        <NavItem>
+            <NavItem>
               <NavLink href="/blog">Blog</NavLink>
             </NavItem>
-                        <NavItem>
+            <NavItem>
               <NavLink href="/staff">Staff</NavLink>
             </NavItem>
-                        <NavItem>
+            <NavItem>
               <NavLink href="/achieve">Achievements</NavLink>
             </NavItem>
           </Nav>
