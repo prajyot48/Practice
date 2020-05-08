@@ -14,35 +14,41 @@ import {
 
 } from 'reactstrap';
 import logo from '../assets/Smulogo.jpeg'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useParams
-} from "react-router-dom";
+import Contact from './contact';
+import Footer from './Footer';
 
-const Example = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
 
-  const toggle = () => setIsOpen(!isOpen);
+class NavBar extends React.Component {
+  constructor(props){
+    super(props)
+    this.state={
+      req_tab: ""
+    }
+  }
+  
+  
+  render(){
+    // const   [isOpen, setIsOpen] = useState(false);
+    // const toggle = () => setIsOpen(!isOpen);
+    
 
   return (
+    <div>
     <div>
       <Navbar expand="md" className='Navbar' >
 
         <NavbarBrand href="/">
           <img src={logo} id='logo' />
         </NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
+        <NavbarToggler  />
+        <Collapse  navbar>
           <Nav className="ml-auto" navbar>
             <NavItem className='nav-item'>
-              <NavLink href="/home/">Home</NavLink>
+              <NavLink onClick={(e)=>this.setState({req_tab:'home'})}>Home</NavLink>
             </NavItem>
 
             <NavItem>
-              <NavLink href="/about">About</NavLink>
+              <NavLink onClick={(e)=>this.setState({req_tab:'about'})}>About</NavLink>
             </NavItem>
 
             <UncontrolledDropdown nav inNavbar>
@@ -62,22 +68,42 @@ const Example = (props) => {
               </DropdownMenu>
             </UncontrolledDropdown>
             <NavItem>
-              <NavLink href="/contact">Contact</NavLink>
+              <NavLink onClick={(e)=>this.setState({req_tab:'contact'})}>Contact</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/blog">Blog</NavLink>
+              <NavLink onClick={(e)=>this.setState({req_tab:'blog'})}>Blog</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/staff">Staff</NavLink>
+              <NavLink onClick={(e)=>this.setState({req_tab:'staff'})}>Staff</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/achieve">Achievements</NavLink>
+              <NavLink onClick={(e)=>this.setState({req_tab:'achivements'})}>Achievements</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
       </Navbar>
     </div>
+    <div>
+     {/* { (()=>{
+      switch (this.state.req_tab) {
+        case 'contact':
+          return <Contact/>
+        case 'blog':
+          return <Contact/>
+        case 'home':
+          return <Contact/>
+              
+        default:
+          return <Footer/>
+          } */}
+      // {this.state.req_tab==="contact"?<Contact/>:<div></div>}
+        {/* })} */}
+    </div>
+    
+    </div>
+
+
   );
 }
-
-export default Example;
+}
+export default NavBar;

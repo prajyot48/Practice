@@ -24,7 +24,7 @@ class Contact extends React.Component {
                   Our Location
                 </ToastHeader>
                   <ToastBody>
-                    SOuth Mumbai
+                    South Mumbai
                   </ToastBody>
                 </Toast>
               </div>
@@ -34,7 +34,7 @@ class Contact extends React.Component {
                   Phone
                 </ToastHeader>
                   <ToastBody>
-                    8080626605
+                  +91 93246 86568
                   </ToastBody>
                 </Toast>
               </div>

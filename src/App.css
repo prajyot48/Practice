@@ -22,11 +22,11 @@
     font-weight: 700;
     font-family: Roboto,"Segoe UI","Helvetica Neue",Arial,sans-serif;
 }
-.navbar-brand,.nav-link {
+.navbar-brand,.navbar-expand-md ,.nav-link {
 color:white;
 }
 
-.navbar-brand,.nav-link:hover {
+.navbar-brand ,.nav-link:hover {
 color:yellow;
 }
 .navbar-brand {

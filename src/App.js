@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Navbar from './Components/Navbar';
+import NavBar from './Components/Navbar';
 import Contact from './Components/contact';
 import {
   BrowserRouter as Router,
@@ -13,7 +13,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Navbar />
+        <NavBar />
 
         <Router>
           <Route path="/contact">
