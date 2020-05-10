@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import NavBar from './Components/Navbar';
+import Example from './Components/Navbar';
 import Contact from './Components/contact';
 import {
   BrowserRouter as Router,
@@ -9,12 +9,12 @@ import {
   Link,
   useParams
 } from "react-router-dom";
+import NavBar from './Components/Navbar';
 class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <NavBar />
-
+        <NavBar/>
         <Router>
           <Route path="/contact">
             <Contact />

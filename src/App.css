@@ -14,7 +14,11 @@
     position: relative;
     top: 25px
 }
-
+h1 {
+    font-family: "archia";
+    font-size: 24px!important;
+    font-weight: 900;
+}
 .nav-item{
     text-transform: uppercase;
     font-style: italic;
@@ -29,11 +33,11 @@ color:white;
 .navbar-brand ,.nav-link:hover {
 color:yellow;
 }
-.navbar-brand {
-
+.Navstyle{
+    cursor: pointer;
 }
 .Navbar{
-    background: #0d2235;
+    background: black;
         height: 60px;
     border-bottom: 3px solid #ffa54b;
 }
@@ -55,7 +59,7 @@ color:yellow;
 
 
 
-/*About Css Here*/
+/*Contact Css Here*/
 #personal,.contact-form{
     display: flex;
 }
@@ -76,7 +80,7 @@ color:yellow;
     padding-top: 60px;
     padding-bottom: 30px;
     display: block;
-
+    
 }
 .contact-details-list{
     display: flex;
@@ -89,4 +93,71 @@ color:yellow;
 }
 .type{
     color: red;
+    
+}
+
+
+
+/* About css here */
+.about{
+    position: relative;
+    top: 55px;
+    background-color: #FFFFFF;
+
+}
+.aboutbg{
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-height: 100%;
+    display: block;
+}
+#about-title{
+    text-align: center;
+    color: #1D1F26;
+    line-height: 72px;
+    font-size: 60px;
+    font-family: bebas-neue, sans-serif;
+    font-weight: 600;
+}
+#about-title-desc{
+    text-align: center;
+    color: #1D1F26;
+    letter-spacing: 1px;
+    line-height: 22px;
+    font-size: 16px;
+    font-family: lato, sans-serif;
+    font-weight: 400;
+}
+
+#row2{
+    position: absolute;
+    left: 200px;
+    display: flex;
+}
+#modal{
+    -webkit-flex:1;
+    -ms-flex:1;
+    flex:1;
+}
+#about-history{
+    text-align: left;
+    color: #1D1F26;
+    line-height: 43px;
+    font-size: 36px;
+    font-family: bebas-neue, sans-serif;
+    font-weight: 600;
+}
+
+#history-detail{
+    letter-spacing: 1px;
+    line-height: 22px;
+    font-size: 16px;
+    font-family: lato, sans-serif;
+    font-weight: 400;
+}
+#about-fixtures{
+    width:100%;
 }
