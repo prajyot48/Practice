@@ -17,6 +17,7 @@ import logo from '../assets/Smulogo.jpeg'
 import Contact from './contact';
 import About from './about';
 import Home from './home';
+import Gallery from './gallery/boysGallery';
 
 
 
@@ -59,10 +60,10 @@ class NavBar extends React.Component {
                     Gallery
               </DropdownToggle>
                   <DropdownMenu right>
-                    <DropdownItem>
+                    <DropdownItem onClick={(e)=>this.setState({req_tab:"boys"})}>
                       Boys Team
                 </DropdownItem>
-                    <DropdownItem>
+                    <DropdownItem onClick={(e)=>this.setState({req_tab:"girls"})}>
                       Girls Team
                 </DropdownItem>
                     <DropdownItem>
@@ -100,7 +101,11 @@ class NavBar extends React.Component {
               case 'staff':
                 return <div/>
               case 'achievements':
-                return <div/> 
+                return <div/>
+              case 'boys':
+                return <Gallery/>
+              case 'girls':
+                return <div/>  
               default:
                 return <Home />
             }
