@@ -1,13 +1,11 @@
 import React from 'react';
 import './App.css';
-import Example from './Components/Navbar';
+// import Example from './Components/Navbar';
 import Contact from './Components/contact';
+// import Footer from './Components/Footer'
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useParams
+  Route
 } from "react-router-dom";
 import NavBar from './Components/Navbar';
 class App extends React.Component {
@@ -19,8 +17,8 @@ class App extends React.Component {
           <Route path="/contact">
             <Contact />
           </Route>
-        </Router>
 
+        </Router>
         {/* <About /> */}
       </div>
     )

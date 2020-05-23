@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   Collapse,
   Navbar,
@@ -15,23 +15,22 @@ import {
 } from 'reactstrap';
 import logo from '../assets/Smulogo.jpeg'
 import Contact from './contact';
-import Footer from './Footer';
-import { Link } from 'react-router-dom';
 import About from './about';
+import Home from './home';
+
+
 
 
 class NavBar extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      req_tab: ""
+      req_tab: "",
+
     }
   }
 
-
   render() {
-    // const   [isOpen, setIsOpen] = useState(false);
-    // const toggle = () => setIsOpen(!isOpen);
 
 
     return (
@@ -40,15 +39,15 @@ class NavBar extends React.Component {
           <Navbar expand="md" className='Navbar' >
 
             <NavbarBrand >
-              <img src={logo} id='logo' />
+              <img src={logo} id='logo' alt={"SMU"} />
             </NavbarBrand>
             <NavbarToggler />
             <Collapse navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem className='nav-item'>
-                
+
                   <NavLink to="/contact" onClick={(e) => this.setState({ req_tab: 'home' })}>Home</NavLink>
-                
+
                 </NavItem>
 
                 <NavItem>
@@ -81,7 +80,7 @@ class NavBar extends React.Component {
                   <NavLink onClick={(e) => this.setState({ req_tab: 'staff' })}>Staff</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink onClick={(e) => this.setState({ req_tab: 'achivements' })}>Achievements</NavLink>
+                  <NavLink onClick={(e) => this.setState({ req_tab: 'achievements' })}>Achievements</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>
@@ -95,12 +94,17 @@ class NavBar extends React.Component {
               case 'about':
                 return <About />
               case 'home':
-                return <div />
-
+                return <Home/>
+              case 'blog':
+                return <div/>
+              case 'staff':
+                return <div/>
+              case 'achievements':
+                return <div/> 
               default:
-                return <About />
+                return <Home />
             }
-          })()) : (<div></div>)}
+          })()) : (<div><p>Page Not found</p></div>)}
         </div>
 
       </div>

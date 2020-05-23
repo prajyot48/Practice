@@ -1,5 +1,5 @@
 import React from 'react'
-import Img from '../assets/aboutbg.png'
+// import Img from '../assets/aboutbg.png'
 import { Table, ModalBody } from 'reactstrap';
 export default class About extends React.Component {
 
@@ -47,7 +47,7 @@ export default class About extends React.Component {
                             <p>FIXTURES</p>
                         </div>
 
-                        <Table hover>
+                        <Table hover borderless>
                             <thead>
                                 <tr>
 
