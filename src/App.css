@@ -6,13 +6,13 @@
 
 /*Css for Navbar*/
 #logo{
-    width: 15vh;
-    height: 15vh;
+    width: 14vh;
+    height: 14vh;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
     position: relative;
-    top: 25px
+    top: 20px
 }
 h1 {
     font-family: "archia";
@@ -29,7 +29,10 @@ h1 {
 .navbar-brand,.navbar-expand-md ,.nav-link {
 color:white;
 }
+.navbar-collapse li:hover{
+    color:yellow;
 
+}
 .navbar-brand ,.nav-link:hover {
 color:yellow;
 }

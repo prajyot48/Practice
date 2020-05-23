@@ -9,6 +9,11 @@ export default class About extends React.Component {
 
                 <div id="about-title">
                     <p>About Our Club</p>
+                    <blockquote>
+                        <p>
+                            How We Play!
+                        </p>
+                    </blockquote>
                 </div>
                 <div id="about-title-desc">
                     <p>Eastablished in 2008, South Mumbai United was started with an intention to increase the number of people playing this beautiful game.
