@@ -18,6 +18,7 @@ import Contact from './contact';
 import About from './about';
 import Home from './home';
 import Gallery from './gallery/boysGallery';
+import GGallery from './gallery/girlsGallery';
 
 
 
@@ -105,7 +106,7 @@ class NavBar extends React.Component {
               case 'boys':
                 return <Gallery/>
               case 'girls':
-                return <div/>  
+                return <GGallery/>  
               default:
                 return <Home />
             }
