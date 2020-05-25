@@ -488,7 +488,7 @@ footer {
     /* Above To set number of cards in one row */
 }
 
-.card {
+.team-card {
     left: 150px;
     padding: 10px;
     width: 25%;
@@ -500,17 +500,17 @@ footer {
     display: inline-block
 }
 
-.card:nth-of-type(3n) {
+.team-card:nth-of-type(3n) {
     margin-right: 0;
 }
 
-.card img {
+.team-card img {
     width: 100%;
     min-height: 100%;
     transition: all 0.9s
 }
 
-.card:hover img {
+.team-card:hover img {
     transform: scale(1.2, 1.2)
 }
 
@@ -531,7 +531,7 @@ footer {
     transition: all 0.4s
 }
 
-.card:hover .data {
+.team-card:hover .data {
     width: 100%;
     height: 100%;
     bottom: 0;
@@ -550,7 +550,7 @@ footer {
     transition: all 0.2s
 }
 
-.card:hover .data p, .card:hover .data a {
+.team-card:hover .data p, .team-card:hover .data a {
     opacity: 1
 }
 
@@ -561,12 +561,12 @@ footer {
     opacity: 0
 }
 
-.data a:hover, .card:hover h2 {
+.data a:hover, .team-card:hover h2 {
     color: khaki
 }
 
 @media (max-width:799px) {
-    .card {
+    .team-card {
         width: 100%;
         margin-right: 0
     }

@@ -3,15 +3,15 @@ import{FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faFacebookF,faTwitter,faInstagram}from '@fortawesome/free-brands-svg-icons' 
 function ReUsableCard(props){
     return(
-        <div class="card">
+        <div className="team-card">
                         <img src={props.name ? require('../assets/'+props.name.toLowerCase()+'.jpg'):require("../assets/player.png")}  alt="Person Image" />
-                        <div class="data">
+                        <div className="data">
                             <h2>{props.name}</h2>
                             <i>{props.role}</i>
                             <p>{props.descrip}</p>
-                            <a href="#" class="fa fa-facebook"><FontAwesomeIcon icon={faFacebookF}/></a>
-                            <a href="#" class="fa fa-twitter"><FontAwesomeIcon icon={faTwitter}/> </a>
-                            <a href="#" class="fa fa-behance"><FontAwesomeIcon icon={faInstagram}/></a>
+                            <a href="#" className="fa fa-facebook"><FontAwesomeIcon icon={faFacebookF}/></a>
+                            <a href="#" className="fa fa-twitter"><FontAwesomeIcon icon={faTwitter}/> </a>
+                            <a href="#" className="fa fa-behance"><FontAwesomeIcon icon={faInstagram}/></a>
                         </div>
                     </div>
     )
