@@ -29,7 +29,7 @@ const Gallery = (props) => {
 
       </Col>
       <Col xs="3">
-        <UseAbleCard no="2" name='Sarhak' lname="Bhosle" src={('../../assets/aboutbg.png')} txt='plays for mdfa and private matches' />
+        <UseAbleCard no="2" name='Sarhak' lname="Bhosle" src={require('../../assets/aboutbg.png')} txt='plays for mdfa and private matches' />
         <UseAbleCard no="30" name='Harsh' lname="Shah" src={require('../../assets/aboutbg.png')} txt='plays for mdfa and private matches' />
         <UseAbleCard no="7" name='Siddarth' lname="Niar" src={require('../../assets/aboutbg.png')} txt='plays for mdfa and private matches' />
         <UseAbleCard no="8" name='Pranav' lname="Bhat" src={require('../../assets/aboutbg.png')} txt='plays for mdfa and private matches' />

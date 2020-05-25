@@ -19,7 +19,8 @@ import About from './about';
 import Home from './home';
 import Gallery from './gallery/boysGallery';
 import GGallery from './gallery/girlsGallery';
-
+import Memories from './gallery/memories';
+import Staff from './staff';
 
 
 
@@ -38,7 +39,7 @@ class NavBar extends React.Component {
     return (
       <div>
         <div className="Navstyle">
-          <Navbar expand="md" className='Navbar' >
+          <Navbar expand="md" className='Navbar' sticky="top">
 
             <NavbarBrand >
               <img src={logo} id='logo' alt={"SMU"} />
@@ -61,14 +62,14 @@ class NavBar extends React.Component {
                     Gallery
               </DropdownToggle>
                   <DropdownMenu right>
-                    <DropdownItem onClick={(e)=>this.setState({req_tab:"boys"})}>
+                    <DropdownItem onClick={(e) => this.setState({ req_tab: "memories" })}>
+                      Memories
+                </DropdownItem>
+                    <DropdownItem onClick={(e) => this.setState({ req_tab: "boys" })}>
                       Boys Team
                 </DropdownItem>
-                    <DropdownItem onClick={(e)=>this.setState({req_tab:"girls"})}>
+                    <DropdownItem onClick={(e) => this.setState({ req_tab: "girls" })}>
                       Girls Team
-                </DropdownItem>
-                    <DropdownItem>
-                      Staff
                 </DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
@@ -88,7 +89,7 @@ class NavBar extends React.Component {
             </Collapse>
           </Navbar>
         </div>
-        <div>
+        <div className="output-container">
           {this.req_tab !== "" ? ((() => {
             switch (this.state.req_tab) {
               case 'contact':
@@ -96,23 +97,24 @@ class NavBar extends React.Component {
               case 'about':
                 return <About />
               case 'home':
-                return <Home/>
+                return <Home />
               case 'blog':
-                return <div/>
+                return <div />
               case 'staff':
-                return <div/>
+                return <Staff/>
               case 'achievements':
-                return <div/>
+                return <div />
               case 'boys':
-                return <Gallery/>
+                return <Gallery />
               case 'girls':
-                return <GGallery/>  
+                return <GGallery />
+              case 'memories':
+                return <Memories />
               default:
                 return <Home />
             }
-          })()) : (<div><p>Page Not found</p></div>)}
+          })()) : (<div></div>)}
         </div>
-
       </div>
 
 

@@ -8,6 +8,7 @@ import * as serviceWorker from './serviceWorker';
 
 
 ReactDOM.render(<App/>, document.getElementById('root'));
+// render([<App key="1" />, <Footer key="2" />], document.getElementById("root"));
 
 
 // If you want your app to work offline and load faster, you can change
